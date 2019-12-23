@@ -41,6 +41,8 @@ class Edit extends React.Component<CombinedProps> {
       resourceId: property.reference as string,
       query: inputValue,
     })
+    console.log(records[0])
+    console.log(JSON.stringify(records[0]))
     return records.map((record: RecordJSON) => ({
       value: record.id,
       label: record.title,
